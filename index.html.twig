@@ -1,0 +1,966 @@
+<div class="login-form">
+
+	<form action="#">
+		<div class="row">
+			<div class="col-md-12 headline mb-3">
+				<h2>INFORMATIONS PERSONNELLES</h2>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="civilite">Civilité :</label>
+					<select name="civilite" id="civilite" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="2">Mr</option>
+						<option value="3">Mlle</option>
+						<option value="4">Mme</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="last_name">Nom</label>
+					<input type="text" name="last_name" id="last_name" class="form-control" chm-validate="required|valid_name|min_len,3|max_len,32" maxlength="32" required="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="first_name">Prénom</label>
+					<input type="text" name="first_name" id="first_name" class="form-control" chm-validate="required|valid_name|min_len,3|max_len,32" maxlength="32" required="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="birthday">Date de naissance</label>
+					<input type="date" name="birthday" id="birthday" max="2002-01-01" min="1960-01-01" class="form-control hasDatepicker" chm-validate="required" maxlength="10" required="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control" chm-validate="required|valid_email" maxlength="64" required="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="phone">Télephone fixe</label>
+					<input type="text" name="phone" id="phone" class="form-control" chm-validate="phone|min_len,10|max_len,10" maxlength="10">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="mobile">Télephone portable</label>
+					<input type="text" name="mobile" id="mobile" class="form-control" chm-validate="required|phone|min_len,10|max_len,10" maxlength="10">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="country_id">Pays de résidence</label>
+					<select name="country_id" id="country_id" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Maroc</option>
+						<option value="2">Afghanistan</option>
+						<option value="3">Afrique du Sud</option>
+						<option value="4">Albanie</option>
+						<option value="5">Algérie</option>
+						<option value="6">Allemagne</option>
+						<option value="7">Andorre</option>
+						<option value="8">Angola</option>
+						<option value="9">Anguilla</option>
+						<option value="10">Antarctique</option>
+						<option value="11">Antigua-et-Barbuda</option>
+						<option value="12">Antilles néerlandaises</option>
+						<option value="13">Arabie saoudite</option>
+						<option value="14">Argentine</option>
+						<option value="15">Arménie</option>
+						<option value="16">Aruba</option>
+						<option value="17">Australie</option>
+						<option value="18">Autriche</option>
+						<option value="19">Azerbaïdjan</option>
+						<option value="20">Bénin</option>
+						<option value="21">Bahamas</option>
+						<option value="22">Bahreïn</option>
+						<option value="23">Bangladesh</option>
+						<option value="24">Barbade</option>
+						<option value="25">Belau</option>
+						<option value="26">BelgiqueBelgique</option>
+						<option value="27">Belize</option>
+						<option value="28">Bermudes</option>
+						<option value="29">Bhoutan</option>
+						<option value="30">Biélorussie</option>
+						<option value="31">Birmanie</option>
+						<option value="32">Bolivie</option>
+						<option value="33">Bosnie-Herzégovine</option>
+						<option value="34">Botswana</option>
+						<option value="35">Brésil</option>
+						<option value="36">Brunei</option>
+						<option value="37">Bulgarie</option>
+						<option value="38">Burkina Faso</option>
+						<option value="39">BurundiBurundi</option>
+						<option value="40">Côte d'Ivoire</option>
+						<option value="41">Cambodge</option>
+						<option value="42">Cameroun</option>
+						<option value="43">Canada</option>
+						<option value="44">Cap-Vert</option>
+						<option value="45">Chili</option>
+						<option value="46">Chine</option>
+						<option value="47">Chypre</option>
+						<option value="48">Colombie</option>
+						<option value="49">Comores</option>
+						<option value="50">Congo</option>
+						<option value="51">Corée du Nord</option>
+						<option value="52">Corée du Sud</option>
+						<option value="53">Costa Rica</option>
+						<option value="54">Croatie</option>
+						<option value="55">Cuba</option>
+						<option value="56">Danemark</option>
+						<option value="57">Djibouti</option>
+						<option value="58">Dominique</option>
+						<option value="59">Egypte</option>
+						<option value="60">Emirats arabes unis</option>
+						<option value="61">Equateur</option>
+						<option value="62">Erythrée</option>
+						<option value="63">Espagne</option>
+						<option value="64">Estonie</option>
+						<option value="65">Etats-Unis</option>
+						<option value="66">Ethiopie</option>
+						<option value="67">Ex-République yougoslave de Macédoine</option>
+						<option value="68">Finlande</option>
+						<option value="69">France</option>
+						<option value="70">Géorgie</option>
+						<option value="71">Gabon</option>
+						<option value="72">Gambie</option>
+						<option value="73">Ghana</option>
+						<option value="74">Gibraltar</option>
+						<option value="75">Grèce</option>
+						<option value="76">Grenade</option>
+						<option value="77">Groenland</option>
+						<option value="78">Guadeloupe</option>
+						<option value="79">Guam</option>
+						<option value="80">Guatemala</option>
+						<option value="81">Guinée</option>
+						<option value="82">Guinée équatoriale</option>
+						<option value="83">Guinée-Bissao</option>
+						<option value="84">Guyana</option>
+						<option value="85">Guyane française</option>
+						<option value="86">Haïti</option>
+						<option value="87">Honduras</option>
+						<option value="88">Hong Kong</option>
+						<option value="89">Hongrie</option>
+						<option value="90">Ile Bouvet</option>
+						<option value="91">Ile Christmas</option>
+						<option value="92">Ile Norfolk</option>
+						<option value="93">Iles Cayman</option>
+						<option value="94">Iles Cook</option>
+						<option value="95">Iles des Cocos (Keeling)</option>
+						<option value="96">Iles Féroé</option>
+						<option value="97">Iles Falkland</option>
+						<option value="98">Iles Fidji</option>
+						<option value="99">Iles Géorgie du Sud et Sandwich du Sud</option>
+						<option value="100">Iles Heard et McDonald</option>
+						<option value="101">Iles Marshal</option>
+						<option value="102">Iles mineures éloignées des états-Unis</option>
+						<option value="103">Iles Pitcairn</option>
+						<option value="104">Iles Salomon</option>
+						<option value="105">Iles Svalbard et Jan Mayen</option>
+						<option value="106">Iles Turks-et-Caicos</option>
+						<option value="107">Iles Vierges américaines</option>
+						<option value="108">Iles Vierges britanniques</option>
+						<option value="109">Inde</option>
+						<option value="110">Indonésie</option>
+						<option value="111">Iran</option>
+						<option value="112">Iraq</option>
+						<option value="113">Irlande</option>
+						<option value="114">Islande</option>
+						<option value="115">Israël</option>
+						<option value="116">Italie</option>
+						<option value="117">Jamaïque</option>
+						<option value="118">Japon</option>
+						<option value="119">Jordanie</option>
+						<option value="120">Kazakhstan</option>
+						<option value="121">Kenya</option>
+						<option value="122">Kirghizistan</option>
+						<option value="123">Kiribati</option>
+						<option value="124">Koweït</option>
+						<option value="125">Laos</option>
+						<option value="126">Lesotho</option>
+						<option value="127">Lettonie</option>
+						<option value="128">Liban</option>
+						<option value="129">Liberia</option>
+						<option value="130">Libye</option>
+						<option value="131">Liechtenstein</option>
+						<option value="132">Lituanie</option>
+						<option value="133">Luxembourg</option>
+						<option value="134">Macao</option>
+						<option value="135">Madagascar</option>
+						<option value="136">Malaisie</option>
+						<option value="137">Malawi</option>
+						<option value="138">Maldives</option>
+						<option value="139">Mali</option>
+						<option value="140">Malte</option>
+						<option value="141">Mariannes du Nord</option>
+						<option value="142">Martinique</option>
+						<option value="143">Maurice</option>
+						<option value="144">Mauritanie</option>
+						<option value="145">Mayotte</option>
+						<option value="146">Mexique</option>
+						<option value="147">Micronésie</option>
+						<option value="148">Moldavie</option>
+						<option value="149">Monaco</option>
+						<option value="150">Mongolie</option>
+						<option value="151">Montserrat</option>
+						<option value="152">Mozambique</option>
+						<option value="153">Népal</option>
+						<option value="154">Namibie</option>
+						<option value="155">Nauru</option>
+						<option value="156">Nicaragua</option>
+						<option value="157">Niger</option>
+						<option value="158">Nigeria</option>
+						<option value="159">Nioué</option>
+						<option value="160">Norvège</option>
+						<option value="161">Nouvelle-Calédonie</option>
+						<option value="162">Nouvelle-Zélande</option>
+						<option value="163">Oman</option>
+						<option value="164">Ouganda</option>
+						<option value="165">Ouzbékistan</option>
+						<option value="166">Pérou</option>
+						<option value="167">Pakistan</option>
+						<option value="168">Panama</option>
+						<option value="169">Papouasie-Nouvelle-Guinée</option>
+						<option value="170">Paraguay</option>
+						<option value="171">Pays-Bas</option>
+						<option value="172">Philippines</option>
+						<option value="173">Pologne</option>
+						<option value="174">Polynésie française</option>
+						<option value="175">Porto Rico</option>
+						<option value="176">Portugal</option>
+						<option value="177">Qatar</option>
+						<option value="178">République centrafricaine</option>
+						<option value="179">République démocratique du Congo</option>
+						<option value="180">République dominicaine</option>
+						<option value="181">République tchèque</option>
+						<option value="182">Réunion</option>
+						<option value="183">Roumanie</option>
+						<option value="184">Royaume-Uni</option>
+						<option value="185">Russie</option>
+						<option value="186">Rwanda</option>
+						<option value="187">Sénégal</option>
+						<option value="188">Sahara occidental</option>
+						<option value="189">Saint-Christophe-et-Niévès</option>
+						<option value="190">Saint-Marin</option>
+						<option value="191">Saint-Pierre-et-Miquelon</option>
+						<option value="192">Saint-Siège</option>
+						<option value="193">Saint-Vincent-et-les-Grenadines</option>
+						<option value="194">Sainte-Hélène</option>
+						<option value="195">Sainte-Lucie</option>
+						<option value="196">Salvador</option>
+						<option value="197">Samoa</option>
+						<option value="198">Samoa américaines</option>
+						<option value="199">Sao Tomé-et-Principe</option>
+						<option value="200">Seychelles</option>
+						<option value="201">Sierra Leone</option>
+						<option value="202">Singapour</option>
+						<option value="203">Slovénie</option>
+						<option value="204">Slovaquie</option>
+						<option value="205">Somalie</option>
+						<option value="206">Soudan</option>
+						<option value="207">Sri Lanka</option>
+						<option value="208">Suède</option>
+						<option value="209">Suisse</option>
+						<option value="210">Suriname</option>
+						<option value="211">Swaziland</option>
+						<option value="212">SyrieSyrie</option>
+						<option value="213">Tadjikistan</option>
+						<option value="214">Taïwan</option>
+						<option value="215">Tanzanie</option>
+						<option value="216">Tchad</option>
+						<option value="217">Terres australes françaises</option>
+						<option value="218">Territoire britannique de l'Océan Indien</option>
+						<option value="219">Thaïlande</option>
+						<option value="220">Timor Oriental</option>
+						<option value="221">Togo</option>
+						<option value="222">Tokélaou</option>
+						<option value="223">Tonga</option>
+						<option value="224">rinité-et-Tobago</option>
+						<option value="225">Tunisie</option>
+						<option value="226">Turkménistan</option>
+						<option value="227">Turquie</option>
+						<option value="228">Tuvalu</option>
+						<option value="229">Ukraine</option>
+						<option value="230">Uruguay</option>
+						<option value="231">Vanuatu</option>
+						<option value="232">Venezuela</option>
+						<option value="233">Viêt Nam</option>
+						<option value="234">Wallis-et-Futuna</option>
+						<option value="235">Yémen</option>
+						<option value="236">Yougoslavie</option>
+						<option value="237">Zambie</option>
+						<option value="238">Zimbabwe</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="native_country_id">Pays d'origine</label>
+					<select name="native_country_id" id="native_country_id" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Maroc</option>
+						<option value="2">Afghanistan</option>
+						<option value="3">Afrique du Sud</option>
+						<option value="4">Albanie</option>
+						<option value="5">Algérie</option>
+						<option value="6">Allemagne</option>
+						<option value="7">Andorre</option>
+						<option value="8">Angola</option>
+						<option value="9">Anguilla</option>
+						<option value="10">Antarctique</option>
+						<option value="11">Antigua-et-Barbuda</option>
+						<option value="12">Antilles néerlandaises</option>
+						<option value="13">Arabie saoudite</option>
+						<option value="14">Argentine</option>
+						<option value="15">Arménie</option>
+						<option value="16">Aruba</option>
+						<option value="17">Australie</option>
+						<option value="18">Autriche</option>
+						<option value="19">Azerbaïdjan</option>
+						<option value="20">Bénin</option>
+						<option value="21">Bahamas</option>
+						<option value="22">Bahreïn</option>
+						<option value="23">Bangladesh</option>
+						<option value="24">Barbade</option>
+						<option value="25">Belau</option>
+						<option value="26">BelgiqueBelgique</option>
+						<option value="27">Belize</option>
+						<option value="28">Bermudes</option>
+						<option value="29">Bhoutan</option>
+						<option value="30">Biélorussie</option>
+						<option value="31">Birmanie</option>
+						<option value="32">Bolivie</option>
+						<option value="33">Bosnie-Herzégovine</option>
+						<option value="34">Botswana</option>
+						<option value="35">Brésil</option>
+						<option value="36">Brunei</option>
+						<option value="37">Bulgarie</option>
+						<option value="38">Burkina Faso</option>
+						<option value="39">BurundiBurundi</option>
+						<option value="40">Côte d'Ivoire</option>
+						<option value="41">Cambodge</option>
+						<option value="42">Cameroun</option>
+						<option value="43">Canada</option>
+						<option value="44">Cap-Vert</option>
+						<option value="45">Chili</option>
+						<option value="46">Chine</option>
+						<option value="47">Chypre</option>
+						<option value="48">Colombie</option>
+						<option value="49">Comores</option>
+						<option value="50">Congo</option>
+						<option value="51">Corée du Nord</option>
+						<option value="52">Corée du Sud</option>
+						<option value="53">Costa Rica</option>
+						<option value="54">Croatie</option>
+						<option value="55">Cuba</option>
+						<option value="56">Danemark</option>
+						<option value="57">Djibouti</option>
+						<option value="58">Dominique</option>
+						<option value="59">Egypte</option>
+						<option value="60">Emirats arabes unis</option>
+						<option value="61">Equateur</option>
+						<option value="62">Erythrée</option>
+						<option value="63">Espagne</option>
+						<option value="64">Estonie</option>
+						<option value="65">Etats-Unis</option>
+						<option value="66">Ethiopie</option>
+						<option value="67">Ex-République yougoslave de Macédoine</option>
+						<option value="68">Finlande</option>
+						<option value="69">France</option>
+						<option value="70">Géorgie</option>
+						<option value="71">Gabon</option>
+						<option value="72">Gambie</option>
+						<option value="73">Ghana</option>
+						<option value="74">Gibraltar</option>
+						<option value="75">Grèce</option>
+						<option value="76">Grenade</option>
+						<option value="77">Groenland</option>
+						<option value="78">Guadeloupe</option>
+						<option value="79">Guam</option>
+						<option value="80">Guatemala</option>
+						<option value="81">Guinée</option>
+						<option value="82">Guinée équatoriale</option>
+						<option value="83">Guinée-Bissao</option>
+						<option value="84">Guyana</option>
+						<option value="85">Guyane française</option>
+						<option value="86">Haïti</option>
+						<option value="87">Honduras</option>
+						<option value="88">Hong Kong</option>
+						<option value="89">Hongrie</option>
+						<option value="90">Ile Bouvet</option>
+						<option value="91">Ile Christmas</option>
+						<option value="92">Ile Norfolk</option>
+						<option value="93">Iles Cayman</option>
+						<option value="94">Iles Cook</option>
+						<option value="95">Iles des Cocos (Keeling)</option>
+						<option value="96">Iles Féroé</option>
+						<option value="97">Iles Falkland</option>
+						<option value="98">Iles Fidji</option>
+						<option value="99">Iles Géorgie du Sud et Sandwich du Sud</option>
+						<option value="100">Iles Heard et McDonald</option>
+						<option value="101">Iles Marshal</option>
+						<option value="102">Iles mineures éloignées des états-Unis</option>
+						<option value="103">Iles Pitcairn</option>
+						<option value="104">Iles Salomon</option>
+						<option value="105">Iles Svalbard et Jan Mayen</option>
+						<option value="106">Iles Turks-et-Caicos</option>
+						<option value="107">Iles Vierges américaines</option>
+						<option value="108">Iles Vierges britanniques</option>
+						<option value="109">Inde</option>
+						<option value="110">Indonésie</option>
+						<option value="111">Iran</option>
+						<option value="112">Iraq</option>
+						<option value="113">Irlande</option>
+						<option value="114">Islande</option>
+						<option value="115">Israël</option>
+						<option value="116">Italie</option>
+						<option value="117">Jamaïque</option>
+						<option value="118">Japon</option>
+						<option value="119">Jordanie</option>
+						<option value="120">Kazakhstan</option>
+						<option value="121">Kenya</option>
+						<option value="122">Kirghizistan</option>
+						<option value="123">Kiribati</option>
+						<option value="124">Koweït</option>
+						<option value="125">Laos</option>
+						<option value="126">Lesotho</option>
+						<option value="127">Lettonie</option>
+						<option value="128">Liban</option>
+						<option value="129">Liberia</option>
+						<option value="130">Libye</option>
+						<option value="131">Liechtenstein</option>
+						<option value="132">Lituanie</option>
+						<option value="133">Luxembourg</option>
+						<option value="134">Macao</option>
+						<option value="135">Madagascar</option>
+						<option value="136">Malaisie</option>
+						<option value="137">Malawi</option>
+						<option value="138">Maldives</option>
+						<option value="139">Mali</option>
+						<option value="140">Malte</option>
+						<option value="141">Mariannes du Nord</option>
+						<option value="142">Martinique</option>
+						<option value="143">Maurice</option>
+						<option value="144">Mauritanie</option>
+						<option value="145">Mayotte</option>
+						<option value="146">Mexique</option>
+						<option value="147">Micronésie</option>
+						<option value="148">Moldavie</option>
+						<option value="149">Monaco</option>
+						<option value="150">Mongolie</option>
+						<option value="151">Montserrat</option>
+						<option value="152">Mozambique</option>
+						<option value="153">Népal</option>
+						<option value="154">Namibie</option>
+						<option value="155">Nauru</option>
+						<option value="156">Nicaragua</option>
+						<option value="157">Niger</option>
+						<option value="158">Nigeria</option>
+						<option value="159">Nioué</option>
+						<option value="160">Norvège</option>
+						<option value="161">Nouvelle-Calédonie</option>
+						<option value="162">Nouvelle-Zélande</option>
+						<option value="163">Oman</option>
+						<option value="164">Ouganda</option>
+						<option value="165">Ouzbékistan</option>
+						<option value="166">Pérou</option>
+						<option value="167">Pakistan</option>
+						<option value="168">Panama</option>
+						<option value="169">Papouasie-Nouvelle-Guinée</option>
+						<option value="170">Paraguay</option>
+						<option value="171">Pays-Bas</option>
+						<option value="172">Philippines</option>
+						<option value="173">Pologne</option>
+						<option value="174">Polynésie française</option>
+						<option value="175">Porto Rico</option>
+						<option value="176">Portugal</option>
+						<option value="177">Qatar</option>
+						<option value="178">République centrafricaine</option>
+						<option value="179">République démocratique du Congo</option>
+						<option value="180">République dominicaine</option>
+						<option value="181">République tchèque</option>
+						<option value="182">Réunion</option>
+						<option value="183">Roumanie</option>
+						<option value="184">Royaume-Uni</option>
+						<option value="185">Russie</option>
+						<option value="186">Rwanda</option>
+						<option value="187">Sénégal</option>
+						<option value="188">Sahara occidental</option>
+						<option value="189">Saint-Christophe-et-Niévès</option>
+						<option value="190">Saint-Marin</option>
+						<option value="191">Saint-Pierre-et-Miquelon</option>
+						<option value="192">Saint-Siège</option>
+						<option value="193">Saint-Vincent-et-les-Grenadines</option>
+						<option value="194">Sainte-Hélène</option>
+						<option value="195">Sainte-Lucie</option>
+						<option value="196">Salvador</option>
+						<option value="197">Samoa</option>
+						<option value="198">Samoa américaines</option>
+						<option value="199">Sao Tomé-et-Principe</option>
+						<option value="200">Seychelles</option>
+						<option value="201">Sierra Leone</option>
+						<option value="202">Singapour</option>
+						<option value="203">Slovénie</option>
+						<option value="204">Slovaquie</option>
+						<option value="205">Somalie</option>
+						<option value="206">Soudan</option>
+						<option value="207">Sri Lanka</option>
+						<option value="208">Suède</option>
+						<option value="209">Suisse</option>
+						<option value="210">Suriname</option>
+						<option value="211">Swaziland</option>
+						<option value="212">SyrieSyrie</option>
+						<option value="213">Tadjikistan</option>
+						<option value="214">Taïwan</option>
+						<option value="215">Tanzanie</option>
+						<option value="216">Tchad</option>
+						<option value="217">Terres australes françaises</option>
+						<option value="218">Territoire britannique de l'Océan Indien</option>
+						<option value="219">Thaïlande</option>
+						<option value="220">Timor Oriental</option>
+						<option value="221">Togo</option>
+						<option value="222">Tokélaou</option>
+						<option value="223">Tonga</option>
+						<option value="224">rinité-et-Tobago</option>
+						<option value="225">Tunisie</option>
+						<option value="226">Turkménistan</option>
+						<option value="227">Turquie</option>
+						<option value="228">Tuvalu</option>
+						<option value="229">Ukraine</option>
+						<option value="230">Uruguay</option>
+						<option value="231">Vanuatu</option>
+						<option value="232">Venezuela</option>
+						<option value="233">Viêt Nam</option>
+						<option value="234">Wallis-et-Futuna</option>
+						<option value="235">Yémen</option>
+						<option value="236">Yougoslavie</option>
+						<option value="237">Zambie</option>
+						<option value="238">Zimbabwe</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12 headline mt-3 rounded-pill">
+				<h2>PARCOURS PROFESSIONNEL</h2>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="profile_id">Profil</label>
+					<select name="profile_id" id="profile_id" class="form-control chm-has-success" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Etudiant</option>
+						<option value="2">Jeune diplômé</option>
+						<option value="3">Cadre expérimenté</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="experience_id">Expérience</label>
+					<select name="experience_id" id="experience_id" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">0-2 ans</option>
+						<option value="2">3-5 ans</option>
+						<option value="3">6-10 ans</option>
+						<option value="4">Plus de 10 ans</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="job_id">Poste recherché</label>
+					<select name="job_id" id="job_id" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Acheteur</option>
+						<option value="2">Assistant achats</option>
+						<option value="3">Directeur des achats</option>
+						<option value="4">Responsable achats</option>
+						<option value="5">Chef de groupe d'employés</option>
+						<option value="6">Chef de service administratif</option>
+						<option value="7">Employé de bureau / agent administratif</option>
+						<option value="8">Employé d'exécution</option>
+						<option value="9">Employé polyvalent</option>
+						<option value="10">Employé qualifié</option>
+						<option value="11">Technicien administratif</option>
+						<option value="12">Assistante de direction générale</option>
+						<option value="13">Secrétaire de direction</option>
+						<option value="14">Assistant commercial</option>
+						<option value="15">Assistant export</option>
+						<option value="16">Commercial sédentaire</option>
+						<option value="17">Directeur commercial</option>
+						<option value="18">Directeur des ventes</option>
+						<option value="19">Ingénieur commercial ou d'affaires</option>
+						<option value="20">Responsable d'agence</option>
+						<option value="21">Responsable export</option>
+						<option value="22">Responsable régional des ventes</option>
+						<option value="23">Technico-commercial non-cadre</option>
+						<option value="24">Télévendeur / télépros</option>
+						<option value="25">Vendeur non-cadre / conseiller de vente</option>
+						<option value="26">Chargé de communication</option>
+						<option value="27">Directeur de communication</option>
+						<option value="28">Documentaliste</option>
+						<option value="29">Directeur Général</option>
+						<option value="30">Directeur Général adjoint</option>
+						<option value="31">Président-directeur général</option>
+						<option value="32">Secrétaire général</option>
+						<option value="33">Chef d'équipe entretien ou maintenance</option>
+						<option value="34">Contremaître d'entretien</option>
+						<option value="35">Responsable du service entretien et maintenance</option>
+						<option value="36">Technicien de maintenance</option>
+						<option value="37">Aide-comptable</option>
+						<option value="38">Assistant contrôle de gestion</option>
+						<option value="39">Comptable</option>
+						<option value="40">Contrôleur de gestion</option>
+						<option value="41">Directeur administratif et financier</option>
+						<option value="42">Directeur financier</option>
+						<option value="43">Responsable administratif et financier</option>
+						<option value="44">Responsable du service comptabilité</option>
+						<option value="45">Responsable trésorerie</option>
+						<option value="46">Administrateur de base de données</option>
+						<option value="47">Analyste programmeur / développeur</option>
+						<option value="48">Chef de projet informatique</option>
+						<option value="49">Directeur informatique</option>
+						<option value="50">Ingénieur d'études</option>
+						<option value="51">Ingénieur réseau</option>
+						<option value="52">Ingénieur système</option>
+						<option value="53">Responsable d'application</option>
+						<option value="54">Responsable d'exploitation</option>
+						<option value="55">Responsable étude et développement</option>
+						<option value="56">Responsable micro-informatique</option>
+						<option value="57">Technicien micro-informatique</option>
+						<option value="58">Technicien support clients</option>
+						<option value="59">Directeur juridique / responsable juridique</option>
+						<option value="60">juriste d'entreprise</option>
+						<option value="61">Approvisionneur</option>
+						<option value="62">Assistant approvisionnements</option>
+						<option value="63">Assistant logistique</option>
+						<option value="64">Chauffeur poids lourd</option>
+						<option value="65">Directeur logistique</option>
+						<option value="66">Magasinier préparateur de commandes</option>
+						<option value="67">Manutentionnaire-cariste</option>
+						<option value="68">Responsable approvisionnements / expédition</option>
+						<option value="69">Responsable de magasin / d'entrepot</option>
+						<option value="70">Responsable logistique</option>
+						<option value="71">Assistant marketing / assistant chef de produits</option>
+						<option value="72">Chef de produits</option>
+						<option value="73">Directeur marketing</option>
+						<option value="74">Responsable marketing</option>
+						<option value="75">Directeur industriel</option>
+						<option value="76">Ingénieur méthodes</option>
+						<option value="77">Responsable méthodes</option>
+						<option value="78">Technicien méthodes</option>
+						<option value="79">Agent de planning et ordonnancement</option>
+						<option value="80">Chef d'atelier / responsable de fabrication</option>
+						<option value="81">Chef d'équipe d'ouvriers qualifiés</option>
+						<option value="82">Conducteur de machine</option>
+						<option value="83">Contremaître fabrication</option>
+						<option value="84">Directeur de la production</option>
+						<option value="85">Directeur d'usine</option>
+						<option value="86">Directeur technique</option>
+						<option value="87">Responsable planning / ordonnancement / lancement</option>
+						<option value="88">Responsable production</option>
+						<option value="89">Technicien d'atelier</option>
+						<option value="90">Agent contrôle qualité</option>
+						<option value="91">Technicien qualité</option>
+						<option value="92">Directeur qualité</option>
+						<option value="93">Responsable environement</option>
+						<option value="94">Responsable qualité / ingénieur qualité</option>
+						<option value="95">Responsable sécurité / Responsable H</option>
+						<option value="96">Agent de laboratoire</option>
+						<option value="97">Technicien de laboratoire</option>
+						<option value="98">Dessinateur d'études</option>
+						<option value="99">Dessinateur projeteur</option>
+						<option value="100">Directeur recherche et développement</option>
+						<option value="101">Ingénieur chef de projet</option>
+						<option value="102">Responsable bureau d'études</option>
+						<option value="103">Responsable de laboratoire</option>
+						<option value="104">Responsable recherche / responsable développement</option>
+						<option value="105">Assistant administration des ventes</option>
+						<option value="106">Responsable administratif des ventes</option>
+						<option value="107">Chargé de relation clientèle</option>
+						<option value="108">Responsable du service après-vente</option>
+						<option value="109">Responsable relation clients</option>
+						<option value="110">Technicien d'installation et / ou de maintenance</option>
+						<option value="111">Assistant ressources humaines / assistant paie</option>
+						<option value="112">Responsable ressources humaines</option>
+						<option value="113">Responsable formation</option>
+						<option value="114">Responsable recrutement</option>
+						<option value="115">Directeur des ressources humaines</option>
+						<option value="116">Hôtesse d'accueil / standardiste</option>
+						<option value="117">Responsable des services généraux</option>
+						<option value="118">Carreleur</option>
+						<option value="119">Chargé d'affaires dans le BTP</option>
+						<option value="120">Charpentier</option>
+						<option value="121">Chef de chantier</option>
+						<option value="122">Conducteur d'engins de chantier</option>
+						<option value="123">Conducteur de travaux</option>
+						<option value="124">Dessinateur-projeteur en bâtiment</option>
+						<option value="125">Electricien du BTP</option>
+						<option value="126">Foreur / Sondeur</option>
+						<option value="127">Géomètre / Topographe</option>
+						<option value="128">Ingénieur calcul / Structures</option>
+						<option value="129">Ingénieur études de prix</option>
+						<option value="130">Ingénieur géomètre</option>
+						<option value="131">Maçon</option>
+						<option value="132">Serrurier / Métaillier</option>
+						<option value="133">Peintre décorateur</option>
+						<option value="134">Plombier</option>
+						<option value="135">Autres</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="domain_id">Domaine de compétence</label>
+					<select name="domain_id" id="domain_id" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Achats Logistique Transports</option>
+						<option value="2">Activités associatives</option>
+						<option value="3">Administration secteur public</option>
+						<option value="4">Agriculture - Pêche - Chasse</option>
+						<option value="5">Art Culture Spectacle</option>
+						<option value="6">Bâtiment - Travaux Publics - Immobilier</option>
+						<option value="7">Banque assurance</option>
+						<option value="8">Commerce Distribution</option>
+						<option value="9">Enseignement - Formation</option>
+						<option value="10">Finance - Comptabilité - Audit</option>
+						<option value="11">Hôtellerie Restauration</option>
+						<option value="12">Industrie et Production</option>
+						<option value="13">Informatique / Technologie</option>
+						<option value="14">Juridique Fiscal</option>
+						<option value="15">Marketing - Communication - Presse</option>
+						<option value="16">Recherche et Développement</option>
+						<option value="17">Ressources Humaines Recrutement Intérim</option>
+						<option value="18">Sécurité</option>
+						<option value="19">Santé</option>
+						<option value="20">Service aux Entreprises</option>
+						<option value="21">Télécommunications</option>
+						<option value="22">Autres</option>
+						<option value="23">Bâtiment - Travaux Publics - Immobilier"</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="sector_id">Secteur ciblé</label>
+					<select name="sector_id" id="sector_id" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Agroalimentaire</option>
+						<option value="2">Agro-Industrie</option>
+						<option value="3">Assurances</option>
+						<option value="4">Audiovisuel</option>
+						<option value="5">Banques</option>
+						<option value="6">BTP</option>
+						<option value="7">Chimie/ Pétrochimie</option>
+						<option value="8">Commerce</option>
+						<option value="9">Conseil</option>
+						<option value="10">Education</option>
+						<option value="11">École-Partenaire</option>
+						<option value="12">Edition &amp; Imprimerie</option>
+						<option value="13">Education</option>
+						<option value="14">Electronique</option>
+						<option value="15">Énergie</option>
+						<option value="16">État</option>
+						<option value="17">Grande Distribution</option>
+						<option value="18">Hôtellerie/ Restauration</option>
+						<option value="19">Hydrocarbures</option>
+						<option value="20">Hygiène/ Cosmétiques</option>
+						<option value="21">Informatique</option>
+						<option value="22">Logistique</option>
+						<option value="23">Mines</option>
+						<option value="24">Pharmacie</option>
+						<option value="25">Presse</option>
+						<option value="26">Services financiers</option>
+						<option value="27">Télécommunications</option>
+						<option value="28">Tourisme et Loisirs</option>
+						<option value="29">Transport Aérien</option>
+						<option value="30">Utilités publiques</option>
+						<option value="31">Autres</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="resume">CV</label>
+					<input type="file" name="resume" id="resume" class="form-control" chm-validate="required|file_max_size,800|extension,doc;docx;pdf" accept=".doc,.docx,.pdf" required="">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 headline mb-3 mt-3">
+				<h2>FORMATION</h2>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="establishment">Nom de l'établissement (Ecole/Université)</label>
+					<input type="text" name="establishment" id="establishment" class="form-control" placeholder="Dernier établissement" chm-validate="required|min_len,2|max_len,64" maxlength="64">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="address">Ville, Pays de l'établissement</label>
+					<input type="text" name="address" id="address" class="form-control" placeholder="Ville, Pays de l'établissement" chm-validate="required|min_len,2|max_len,64" maxlength="64">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label for="diploma">Diplôme obtenu</label>
+					<input type="text" name="diploma" id="diploma" class="form-control" placeholder="Dernier diplôme obtenu" chm-validate="required|min_len,2|max_len,32" maxlength="32">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="form-group required">
+					<label class="pl-0">Avez-vous obtenu ce diplôme ?</label>
+					<label class="radio-inline">
+						<input type="radio" name="obtained" value="1">Oui
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="obtained" value="0" checked="">Non
+					</label>
+				</div>
+			</div>
+			<div class="col-md-4" id="obtentionDateContainer" style="display: none;">
+				<div class="form-group required">
+					<label for="obtention_date">Date d'obtention</label>
+					<input type="text" name="obtention_date" id="obtention_date" max="2019-01-01" min="" class="form-control hasDatepicker">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 headline mt-3">
+
+				<h2>LANGUES</h2>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group required">
+					<label for="lang_1">Arabe</label>
+					<select name="languages[1]" id="1" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Langue maternelle</option>
+						<option value="2">Très bon</option>
+						<option value="3">Bon</option>
+						<option value="4">Moyen</option>
+						<option value="5">Faible</option>
+						<option value="6">Niveau scolaire</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group required">
+					<label for="lang_2">Français</label>
+					<select name="languages[2]" id="2" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Langue maternelle</option>
+						<option value="2">Très bon</option>
+						<option value="3">Bon</option>
+						<option value="4">Moyen</option>
+						<option value="5">Faible</option>
+						<option value="6">Niveau scolaire</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group required">
+					<label for="lang_3">Anglais</label>
+					<select name="languages[3]" id="3" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Langue maternelle</option>
+						<option value="2">Très bon</option>
+						<option value="3">Bon</option>
+						<option value="4">Moyen</option>
+						<option value="5">Faible</option>
+						<option value="6">Niveau scolaire</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group required">
+					<label for="lang_4">Espagnol</label>
+					<select name="languages[4]" id="4" class="form-control" chm-validate="required" required="">
+						<option value=""></option>
+						<option value="1">Langue maternelle</option>
+						<option value="2">Très bon</option>
+						<option value="3">Bon</option>
+						<option value="4">Moyen</option>
+						<option value="5">Faible</option>
+						<option value="6">Niveau scolaire</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group">
+					<label for="lang_5">Autre</label>
+					<input type="text" name="languages[5][other][name]" id="lang_custom" class="form-control" maxlength="16">
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group">
+					<label for="lang_custom_value">&nbsp;</label>
+					<select name="languages[5][other][level]" id="lang_custom_value" class="form-control" style="display: none;">
+						<option value=""></option>
+						<option value="1">Langue maternelle</option>
+						<option value="2">Très bon</option>
+						<option value="3">Bon</option>
+						<option value="4">Moyen</option>
+						<option value="5">Faible</option>
+						<option value="6">Niveau scolaire</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-15">
+			<div class="col-lg-12">
+				<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/V6_85qpc2Xf2sbe3xTnRte7m/recaptcha__fr.js" crossorigin="anonymous" integrity="sha384-keWnLYOCfE+aI3ZfqouTqAknw6OmlSMnjwIDC1AcAfpwNdIk80bC3as5JJTdrXAG"></script>
+				<script src="https://www.google.com/recaptcha/api.js" async=""></script>
+				<div class="form-group">
+					<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6Lc5a8QUAAAAAAtmPUNKC26b24xE3FQd_CsmRefn">
+						<div style="width: 304px; height: 78px;">
+							<div>
+								<iframe title="reCAPTCHA" class="mt-3" width="304" height="78" role="presentation" name="a-71irdfpi604m" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Lc5a8QUAAAAAAtmPUNKC26b24xE3FQd_CsmRefn&amp;co=aHR0cHM6Ly9jdnRoZXF1ZS5jYXJyZWZvdXJhZnJpY2Fpbi5jb206NDQz&amp;hl=fr&amp;v=V6_85qpc2Xf2sbe3xTnRte7m&amp;size=normal&amp;cb=ulyz91yrk27o"></iframe>
+
+							</div>
+							<textarea id="g-recaptcha-response" name="g-recaptcha-response " class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+
+						</div>
+						<iframe style="display: none;"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="form-check form-group">
+			<input class="form-check-input" type="checkbox" value="" id="agree">
+			<label class="form-check-label" for="agree">
+				Acceptez les
+				<a href="#">Conditions de service.</a>
+			</label>
+		</div>
+		<div class="d-flex align-items-center">
+			<button type="submit" class="theme-btn">Inscription
+				<i class="far fa-paper-plane"></i>
+			</button>
+			<a href="#" onclick="history.back();" class="btn btn-danger pull-left mt-3">Fermer</a>
+
+		</div>
+
+	</form>
+	<div class="login-footer">
+		<p>Vous avez déjà un compte?
+			<a href="login.html">Connexion.</a>
+		</p>
+	</div>
+</div>
